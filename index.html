@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karvon Motors</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+<header class="header container">
+  <div class="header-logo" id="header-logo">
+    <img src="img/logo.png" alt="logo" id="logo">
+  </div>
+  <h1>Karvon Motors</h1>
+  <div class="qoshish-mode">
+    <button id="addBtn">Qo'shish</button>
+    <button id="mode">Mode</button>
+  </div>
+</header>
+<div>
+  <!-- sahifa uchun  -->
+  <div class="sahifa-grid container" id="sahifa" ></div>
+
+  <template id="templateSahifa">
+    <div class="templateSahifa-div">
+      <div class="modelSahifa" ></div>
+      <div class="yearSahifa"></div>
+      <div class="maxSpeedSahifa" ></div>
+      <div class="horsepowerSahifa" ></div>
+      <div class="countrySahifa" ></div>
+      <div class="korish-ochirish">
+        <button class="korishBtn"><img src="img/eay.png" alt="korish"></button>
+        <button class="editBtn"><img src="img/edit.png" alt=""></button>
+        <button class="deleteBtn"><img src="img/delete.svg" alt=""></button>
+      </div>
+    </div>
+  </template>
+
+
+  <!-- ko'rish bosilganda -->
+
+<div id="korishModal" class="korish-modal">
+  <div class="korish-modal-content">
+    <span class="closeKorish">&times;</span>
+    <div class="korish-name"></div>
+    <div class="korish-trim"></div>
+    <div class="korish-generation"></div>
+    <div class="korish-year"></div>
+    <div class="korish-color-wrapper">
+      <span class="korish-color"></span>
+      <span class="korish-colorName"></span>
+    </div>
+    <div class="korish-category"></div>
+    <div class="korish-doorCount"></div>
+    <div class="korish-seatCount"></div>
+    <div class="korish-maxSpeed"></div>
+    <div class="korish-acceleration"></div>
+    <div class="korish-engine"></div>
+    <div class="korish-horsePower"></div>
+    <div class="korish-city"></div>
+    <div class="korish-highway"></div>
+    <div class="korish-combined"></div>
+    <div class="korish-country"></div>
+    <div class="korish-description"></div>
+  </div>
+</div>
+
+<div id="tahrirlashModal" class="korish-modal">
+  <div class="korish-modal-content">
+    <span class="closeTahrir">&times;</span>
+    <h2>Avtomobilni tahrirlash</h2>
+    <label>Modeli:</label>
+    <input type="text" class="tahrir-name">
+    <label>Trim:</label>
+    <input type="text" class="tahrir-trim">
+    <label>Generation:</label>
+    <input type="text" class="tahrir-generation">
+    <label>Year:</label>
+    <input type="number" class="tahrir-year">
+    <label>Rang:</label>
+    <input type="color" class="tahrir-color">
+    <label>Rang nomi:</label>
+    <input type="text" class="tahrir-colorName">
+    <label>Category:</label>
+    <input type="text" class="tahrir-category">
+    <label>DoorCount:</label>
+    <input type="number" class="tahrir-doorCount">
+    <label>SeatCount:</label>
+    <input type="number" class="tahrir-seatCount">
+    <label>MaxSpeed:</label>
+    <input type="text" class="tahrir-maxSpeed">
+    <label>Acceleration:</label>
+    <input type="text" class="tahrir-acceleration">
+    <label>Engine:</label>
+    <input type="text" class="tahrir-engine">
+    <label>HorsePower:</label>
+    <input type="number" class="tahrir-horsePower">
+
+    <label>City Consumption:</label>
+    <input type="text" class="tahrir-city">
+
+    <label>Highway Consumption:</label>
+    <input type="text" class="tahrir-highway">
+
+    <label>Combined Consumption:</label>
+    <input type="text" class="tahrir-combined">
+
+    <label>Country:</label>
+    <input type="text" class="tahrir-country">
+
+    <label>Description:</label>
+    <textarea class="tahrir-description"></textarea>
+
+    <button class="saveTahrir">Saqlash</button>
+  </div>
+</div>
+
+
+<!-- Add Car Modal -->
+</div>
+
+
+
+  
+
+<script type="module" src="./js/app.js" ></script>
+</body>
+</html>
